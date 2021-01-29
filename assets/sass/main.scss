@@ -1,13 +1,20 @@
 // abstracts
-@import 'abstracts/variables';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 // vendors
-@import 'vendors/bootstrap/scss/bootstrap.scss';
+@import "vendors/bootstrap/scss/bootstrap.scss";
 
-// base 
-@import 'base/base';
+// base
+@import "base/reset";
+@import "base/base";
+
+// components
+@import "components/buttons";
+@import "components/pagination";
 
 // layout
-@import 'layout/navigation';
-@import 'layout/header.scss';
-
+@import "layout/navigation";
+@import "layout/header.scss";
+@import "layout/_blog.scss";
+@import "layout/footer";

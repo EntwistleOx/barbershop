@@ -2,16 +2,33 @@
   background-color: $eerie-black !important;
 }
 
-.navbar{
+.bg-light {
+  background-color: $platinum !important;
+}
+
+.navbar {
   padding: 1rem;
-}
+  & .navbar-brand {
+    padding: 0.25rem 1.2rem;
+  }
 
-.navbar-brand {
-  padding: 0.25rem 1.2rem;
-}
+  &.navbar-dark {
+    & .navbar-toggler {
+      padding: 0.25rem 1.2rem;
+      color: $white;
+      border-color: transparent;
+    }
 
-.navbar-dark .navbar-toggler {
-  padding: 0.25rem 1.2rem;
-  color: $white;
-  border-color: transparent;
+    & .navbar-nav .nav-link {
+      color: $white;
+
+      &:hover {
+        color: $light-gray;
+      }
+    }
+
+    & .navbar-nav .active > .nav-link {
+      color: $ruddy-pink;
+    }
+  }
 }

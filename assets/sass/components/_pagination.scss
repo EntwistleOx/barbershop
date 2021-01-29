@@ -1,0 +1,41 @@
+.custom-pagination {
+  display: flex;
+  border-radius: 3rem;
+  font-size: $small;
+
+  @include respond-to("medium") {
+    font-size: $medium;
+  }
+
+  &__item:first-child &__link {
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    color: $nickel;
+  }
+
+  &__item:last-child &__link {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+
+  &__link {
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    color: $raisin-black;
+    background-color: $white;
+    border: 1px solid $light-gray;
+
+    &:hover {
+      color: $nickel;
+    }
+  }
+
+  &--active {
+    background-color: $eerie-black;
+    color: $white;
+
+    &:hover {
+      color: $nickel;
+    }
+  }
+}

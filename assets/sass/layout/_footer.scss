@@ -1,0 +1,8 @@
+.custom-footer {
+  @include flex-align(row, center, center);
+  padding: 4rem 0;
+
+  &__logo {
+    width: 80px;
+  }
+}

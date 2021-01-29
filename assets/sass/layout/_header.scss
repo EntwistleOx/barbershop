@@ -1,14 +1,12 @@
 .custom-header {
+  @include flex-align(column, center, center);
   background-color: $eerie-black;
-  background-image: url('../images/post-image.jpg');
+  background-image: url("../images/post-image.jpg");
   background-position: center;
   background-size: cover;
   height: calc(100vh - 74px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: $white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   text-align: center;
   padding: 0 2rem;
 
@@ -17,10 +15,19 @@
     font-weight: $playfair-black-italic;
     font-style: italic;
     font-size: $x-large;
+
+    @include respond-to("medium") {
+      max-width: 650px;
+      font-size: $xx-large;
+    }
   }
 
   &__icon {
     position: absolute;
     bottom: 1.8rem;
+
+    @include respond-to("medium") {
+      bottom: 3rem;
+    }
   }
 }

@@ -1,7 +1,7 @@
 // Color Schemas
 $white: #ffffff;
 $platinum: #e6e7e7;
-$light-day: #d1d1d1;
+$light-gray: #d1d1d1;
 
 $fuzzy-wuzzy: #e56353;
 $ruddy-pink: #d76c69;
@@ -12,8 +12,8 @@ $raisin-black: #222323;
 $nickel: #6c6e70;
 
 // Typography
-$roboto: 'Roboto', sans-serif;
-$playfair: 'Playfair Display', serif;
+$roboto: "Roboto", sans-serif;
+$playfair: "Playfair Display", serif;
 
 // Font Weight
 $regular: 400;
@@ -27,3 +27,9 @@ $large: 18px;
 $medium: 16px;
 $small: 12px;
 
+// Breakpoint
+$breakpoints: (
+  "medium": (
+    min-width: 768px,
+  ),
+);

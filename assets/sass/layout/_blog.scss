@@ -1,0 +1,102 @@
+.custom-blog {
+  &__content {
+    padding: 2.5rem 2rem;
+
+    @include respond-to("medium") {
+      padding: 4rem 0;
+    }
+  }
+
+  &__date {
+    font-family: $playfair;
+    font-size: $medium;
+    color: $nickel;
+    margin-bottom: 2.3rem;
+  }
+
+  &__text {
+    line-height: 2.4rem;
+    font-weight: $robo-light;
+    color: $raisin-black;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    @include flex-align(row, space-around, center);
+    padding-top: 1rem;
+
+    @include respond-to("medium") {
+      display: block;
+    }
+  }
+
+  &__author {
+    @include flex-align(column, center, center);
+    padding: 2rem 0 3rem;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+      padding: 3rem 4rem 4rem;
+    }
+  }
+
+  &__img {
+    width: 132px;
+
+    @include respond-to("medium") {
+      width: 180px;
+    }
+  }
+
+  &__author-data {
+    @include flex-align(column, flex-start, center);
+    margin: 0 3rem;
+
+    @include respond-to("medium") {
+      align-items: flex-start;
+    }
+  }
+
+  &__author-name {
+    font-family: $playfair;
+    font-weight: $playfair-black-italic;
+    font-size: $x-large;
+    font-style: italic;
+    padding-top: 1.3rem;
+
+    @include respond-to("medium") {
+      padding-top: 0;
+    }
+  }
+
+  &__link {
+    font-size: $medium;
+    font-weight: $robo-light;
+    color: $ruddy-pink;
+
+    @include respond-to("medium") {
+      font-size: $large;
+    }
+
+    &:hover {
+      color: $raisin-black;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: &fuzzy-wuzzy;
+    }
+  }
+
+  &__author-text {
+    font-size: $small;
+    line-height: 1.8rem;
+    max-width: 500px;
+    margin-bottom: 0;
+  }
+
+  &__pagination {
+    @include flex-align(row, center, center);
+    padding: 3.5rem 0;
+  }
+}
